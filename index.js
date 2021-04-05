@@ -1,12 +1,9 @@
-const { ipcRenderer } = require('electron');
-
 let formulario = document.querySelector('#login');
+let user = document.querySelector('#username');
+let password = document.querySelector('#password');
 
 formulario.addEventListener('submit', (event) => {
-		abrirSistema();
+	event.preventDefault()
+	let args = [user.value, password.value]
+	window.comunicacion.iniciarSesion(args)
 });
-
-
-function abrirSistema() {
-	ipcRenderer.send('login-success');
-};

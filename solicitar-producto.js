@@ -1,6 +1,6 @@
 let cardbody = document.querySelector('.card-body');
 
-function crearSolicitarProducto () {
+export function crearSolicitarProducto () {
     return `
     <form>
     <div class="mb-3 row">
@@ -43,7 +43,3 @@ function crearSolicitarProducto () {
 </div>
     `
 };
-
-module.exports = {
-        crearSolicitarProducto
-    };

@@ -97,7 +97,7 @@
             <h5 class="card-header">Productos</h5>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table" id="productos">
+                <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">SKU</th>
@@ -109,61 +109,8 @@
                       <th scope="col"></th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">${producto.sku}</th>
-                      <td>${producto.nombre}</td>
-                      <td>${producto.descripcion}</td>
-                      <td>${producto.categoria}</td>
-                      <td>${producto.existencia}</td>
-                      <td><button type="button" class="btn btn-sm btn-primary">Editar</button></td>
-                      <td><button type="button" class="btn btn-sm btn-success">Solicitar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">${producto.sku}</th>
-                      <td>${producto.nombre}</td>
-                      <td>${producto.descripcion}</td>
-                      <td>${producto.categoria}</td>
-                      <td>${producto.existencia}</td>
-                      <td><button type="button" class="btn btn-sm btn-primary">Editar</button></td>
-                      <td><button type="button" class="btn btn-sm btn-success">Solicitar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">${producto.sku}</th>
-                      <td>${producto.nombre}</td>
-                      <td>${producto.descripcion}</td>
-                      <td>${producto.categoria}</td>
-                      <td>${producto.existencia}</td>
-                      <td><button type="button" class="btn btn-sm btn-primary">Editar</button></td>
-                      <td><button type="button" class="btn btn-sm btn-success">Solicitar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">${producto.sku}</th>
-                      <td>${producto.nombre}</td>
-                      <td>${producto.descripcion}</td>
-                      <td>${producto.categoria}</td>
-                      <td>${producto.existencia}</td>
-                      <td><button type="button" class="btn btn-sm btn-primary">Editar</button></td>
-                      <td><button type="button" class="btn btn-sm btn-success">Solicitar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">${producto.sku}</th>
-                      <td>${producto.nombre}</td>
-                      <td>${producto.descripcion}</td>
-                      <td>${producto.categoria}</td>
-                      <td>${producto.existencia}</td>
-                      <td><button type="button" class="btn btn-sm btn-primary">Editar</button></td>
-                      <td><button type="button" class="btn btn-sm btn-success">Solicitar</button></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">${producto.sku}</th>
-                      <td>${producto.nombre}</td>
-                      <td>${producto.descripcion}</td>
-                      <td>${producto.categoria}</td>
-                      <td>${producto.existencia}</td>
-                      <td><button type="button" class="btn btn-sm btn-primary">Editar</button></td>
-                      <td><button type="button" class="btn btn-sm btn-success">Solicitar</button></td>
-                    </tr>
+                  <tbody id="productos">
+                    
                   </tbody>
                 </table>
 
@@ -194,21 +141,9 @@
   <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script>
-    new Chartist.Line('#traffic-chart', {
-      labels: ['January', 'Februrary', 'March', 'April', 'May', 'June'],
-      series: [
-        [23000, 25000, 19000, 34000, 56000, 64000]
-      ]
-    }, {
-      low: 0,
-      showArea: true
-    });
-  </script>
-
-  <script>
-    require("./tablero.js");
-  </script>
+  
+  <script type="module" src="./tablero.js"></script>
+  <script type="module" src="./editar-producto.js"></script>
 
 </body>
 
